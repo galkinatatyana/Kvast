@@ -1,0 +1,788 @@
+.page{
+	margin:0;
+	padding:0;
+	font-family:Arial;
+	font-size:16px;
+	line-height:1;
+}
+
+.page__inner{
+	width:1200px;
+	margin:auto;
+}
+
+.header{
+	background-image:url(img/wheat-back.jpg);
+	background-color:#643e0f;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:right bottom;
+}
+
+.header__logo{
+	display:inline-block;
+	margin-left:200px;
+	margin-top:60px;	
+}
+
+.logo{
+	text-align: center;
+}
+
+.logo__link{
+	display: inline-block;	
+}
+
+.logo__img{
+	width: 140px;
+	height: 76px;
+}
+
+.header__menu{
+	float:right;
+	margin-right:200px;
+	margin-top:70px;
+}
+
+.menu__list{
+	display: table;
+	padding: 0;
+	font-size: 0;
+
+}
+
+.menu__item {
+	display:inline-block;
+	box-sizing: border-box;
+	border-bottom:1px solid rgba(255,255,255,0.2);
+	border-top:1px solid rgba(255,255,255,0.2);
+	padding: 0 20px;
+	list-style:none;
+}
+
+.menu__item:first-child{
+	padding-left: 0;
+}
+
+.menu__item:last-child{
+	padding-right: 0;
+}
+
+.menu__link{
+	display:block;
+	padding:27px 0;
+	box-sizing: border-box;
+	border-bottom:1px solid transparent;
+	outline:none;
+	font-size:16px;
+	text-decoration:none;
+	color:#ffffff;	
+	line-height:15px;
+	text-transform:uppercase;
+	font-weight:600;	
+}
+
+.menu__link:hover,.menu__link:focus{
+	border-bottom:1px solid rgb(255,255,255);
+	color:rgb(255,203,120)
+}
+
+.menu:first-of-type .menu__link{
+	padding-left:0;
+}
+
+.menu__item:last-of-type .menu__link{
+	padding-right:0;
+}
+
+.menu__link:active{
+	color:rgba(255,203,120,0.3)
+}
+
+.header__text{
+	padding-top:115px;
+	padding-bottom:155px;	
+	font-size:70px;
+	color:#ffffff;
+	font-weight:bold;
+	text-align:center;	
+	line-height:70px;
+}
+
+.main__new{
+	padding-top:88px;
+	padding-left:200px;
+	padding-right:200px;
+	padding-bottom:112px;
+}
+
+.title{
+	font-size:40px;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+
+.new__title{
+	margin-bottom:90px;
+}
+
+.new__inner{
+	display:flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+}
+
+.new__product{
+	position:relative;
+	width:398px;
+	padding-top:10px;
+	padding-left:35px;
+	padding-right:25px;
+	box-sizing:border-box;
+	border-left:1px solid rgba(0,0,0,0.1);
+}
+
+.new__product--last{
+	border-right:1px solid rgba(0,0,0,0.1);
+}
+
+.product__name{	
+	padding-bottom:35px;
+}
+
+.product__right-wrap{
+	float:right;
+	width:150px;
+	min-height:460px;
+	margin-bottom:13px;
+}
+
+.product__information{
+	margin-bottom:10px;
+	font-weight:bold;
+	text-transform:uppercase;	
+	border-collapse:collapse;
+}
+
+.product__information-item{
+	width:75px;
+	height:41px;
+	border:1px solid #e5e5e5;
+	padding-left:10px;
+	box-sizing:border-box;
+}
+
+.product__ingredients{
+	color:#404040;
+	font-size:14px;
+	line-height:24px;
+}
+
+.product__img{
+	position:absolute;
+	left:45px;
+	z-index:-1;
+}
+
+.product__description{
+	clear:both;
+	margin-bottom:60px;
+	color:#404040;
+	line-height:30px;	
+}
+
+.product__bottom-wrap{	
+	display: -webkit-box;
+	display: flex;
+}
+
+.button{
+	height: 50px;
+	padding: 0 22px;
+	box-sizing: border-box;
+	background-color:#834700;
+	border: none;
+	outline: none;
+	line-height: 50px;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-weight:bold;
+	color:#ffffff;
+}
+
+.button:hover, .button:focus{
+	background-color: #6a3900;
+}
+
+.button:active{
+	color:rgba(255,255,255,0.3)
+}
+
+.button--ghost{
+	border:2px solid #834700;
+	background-color:transparent;
+	color: #834700;
+}
+
+.button--ghost:hover, .button--ghost:focus{	
+	background-color: transparent;
+	border-color:#6a3900;
+	color:#6a3900;
+}
+
+.product__details:active{
+	opacity: 0.3;
+}
+
+.product__details, .product__buy, .product__price{
+	display: block;
+	font-size:16px;
+}
+
+.product__details{
+	margin-right:7px;
+	border-color:#834700;
+	color:#834700;	
+}
+
+.product__buy{
+	margin-right:20px;
+}
+
+.product__price{
+	line-height: 50px;
+}
+
+.main__feachers{
+	padding-top:80px;
+	padding-bottom:90px;
+}
+
+.feachers{
+	background-color:#ffcb78;
+}
+
+.feachers__wrap{
+	display:flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	justify-content:space-around;
+}
+
+.feachers__item{	
+	flex-grow:1;
+	padding-left:95px;
+	padding-right:91px;
+	border-right:1px solid #e5b66c;
+	list-style:none;
+}
+
+.feachers__item--last{
+	border-right:none;
+}
+
+.feachers__item:before{	
+	display:block;	
+	width:70px;
+	height:70px;
+	margin-bottom:28px;
+	background-repeat:no-repeat;
+	content:'';
+}
+
+.feachers__item--ourselves:before{
+	background-image:url(img/icon-brew.png);
+}
+
+.feachers__item--own:before{
+	background-image:url(img/icon-matreshka.png);
+}
+
+.feachers__item--quality:before{
+	background-image:url(img/icon-thumbsup.png);
+}
+
+.title2{
+	font-size:20px;
+	line-height:30px;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+
+.feachers__title{
+	margin-bottom:20px;
+}
+
+.feachers__text{
+	width:215px;
+	line-height:30px;
+	color:#404040;	
+}
+
+.main__history{
+	padding-top:90px;
+	padding-left:198px;
+	padding-bottom:18px;
+}
+
+.history__title{
+	margin-bottom:70px;
+}
+
+.history__header{
+	font-size:0;
+}
+
+.history__item-title{
+	display:inline-block;
+	width:605px;
+	margin-bottom:20px;
+}
+
+.history__source{
+	display:inline-block;
+	font-size:16px;
+	line-height:30px;	
+}
+
+.history__source-link{
+	color:#834700;
+	outline: none;
+}
+
+.history__source-link:hover, .history__source-link:focus{
+	color: #6a3900;
+}
+
+.history__source-link:active{
+	color: #cab7a2;
+}
+
+.history__content{
+	padding-bottom:60px;
+	margin: 0;
+}
+
+.history__img-wrap{	
+	position:relative;
+	float:right;
+	width:200px;
+	height:100px;
+	margin-right:200px;
+	margin-top:10px;
+	overflow:hidden;
+	border-radius:5px;
+}
+
+.history__img{
+	position:absolute;
+	bottom:0;
+	width:100%;
+}
+
+.history__text{
+	width:490px;
+	line-height:30px;
+}
+
+.press{
+	background-color:#ede5d8;
+}
+
+.main__press{
+	position: relative;
+	padding-top:90px;
+	padding-left:200px;
+	padding-bottom:90px;
+}
+
+.press__title{
+	margin-bottom:85px;
+}
+
+.pres__inner{
+	margin: 0;
+}
+
+.press__text{
+	width:700px;
+	margin-bottom:35px;
+	line-height:30px;
+	color:#404040;	
+}
+
+.press__text:before{
+	position:absolute;
+	left:125px;	
+	display:inline-block;
+	width:41px;
+	height:31px;
+	margin-top:8px;
+	background-image:url(img/quotes.png);
+	content:'';	
+}
+
+.press__name{
+	float:right;
+	margin-right:200px;
+	margin-top:10px;
+	font-style:normal;
+}
+
+.press__link{
+	display:inline-block;
+	border-color:black;	
+	opacity:0.3;
+	color:black;
+}
+
+.press__link:hover, .press__link:focus{
+	background-color: #a5a097;
+	border-color: #a5a097;
+	color: white;
+	 
+}
+
+.press__link:active{
+	background-color: #8f8a81;
+	color: rgba(255,255,255,0.3);
+}
+
+.main__assortment{
+	padding-top:100px;
+	padding-left:200px;
+	padding-bottom:93px;
+}
+
+.assortment__title{
+	margin-bottom:80px;
+}
+
+.assortment__inner{
+	width:800px;
+	border-collapse:collapse;
+}
+
+.assortment__row{
+	height:66px;
+	border-bottom:1px solid #e5e5e5;	
+}
+
+.assortment__cell{
+	text-transform:uppercase;	
+}
+
+.assortment__cell--head{
+	padding-bottom:25px;
+	font-size:11px;
+	text-align:left;	
+	color:#999999;
+	font-weight:normal;	
+}
+
+.assortment__cell--name{
+	width:400px;
+	font-weight:bold;
+}
+
+.assortment__cell--cost{
+	text-align:right;
+}
+
+.assortment__cell--new:after{	
+	position:relative;
+	bottom:7px;
+	left:25px;
+	display:inline-block;
+	padding:2px 5px;	
+	background:black;
+	border-radius:3px;	
+	font-size:8px;
+	text-transform:uppercase;
+	color:white;
+	content:"новинка";
+}
+
+.main__order{
+	padding-top:90px;
+	padding-left:199px;
+	padding-bottom:80px;	
+}
+
+.order{
+	background-color:#ffcb78;
+}
+
+.order__title{
+	margin-bottom:85px;
+}
+
+.order__text{	
+	width:635px;
+	margin-bottom:70px;
+	line-height:30px;
+}
+
+.order__form{
+	width: 630px;
+}
+
+.order__item{
+	position: relative;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;	
+	flex-direction: column-reverse;	
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: reverse;
+	margin-top: 0;
+	margin-bottom: 25px;
+}
+
+.order__label, .order__label--checkbox{	
+	margin-bottom: 10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	line-height:20px;
+}
+
+.order__input{
+	display:block;
+	width:100%;
+	height:50px;
+	padding:0 25px;
+	box-sizing:border-box;
+	background-color:rgba(0,0,0,0.1);
+	border:none;
+	outline:none;	
+	text-transform:uppercase;
+	font-weight:bold;
+}
+
+.order__input:hover{
+	background-color:rgba(0,0,0,0.15);
+}
+
+.order__input:focus{
+	background-color: white;
+}
+
+.order__tel-wrap{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+
+}
+
+.tel{
+	width: 290px;
+}
+
+.order__select{
+	appearance:none; /*убирает стрелку по умолчанию*/
+	-webkit-appearance: none;
+	color: rgba(0,0,0,0.3);
+	font-family: Arial, Helvetica, sans-serif;
+}
+.order__option{
+	background-color: white;
+	color: black;
+	
+	text-transform: uppercase;
+}
+
+.order__option:disabled{
+	color:rgba(0,0,0,0.3);
+}
+
+.order__label--for_select::before{
+	position: absolute;
+	bottom: 7px;
+	right: 12px;
+	display:inline-block;
+	width:0;
+	height:0;
+	border: 10px solid transparent; 
+	border-top: 10px solid black;
+	opacity: 0.2;
+	content:'';
+	pointer-events: none; /*чтобы клик мышкой по стрелке срабатывал и открывал выпадающий список*/
+}
+
+.textarea{
+	resize: none;
+	height: 161px;
+	box-sizing: border-box;
+	padding: 10px 20px;
+}
+
+.label-for_checkbox{
+	position: relative;
+	display: block;
+	padding-left: 54px;
+}
+
+.order__item--checkbox{
+	height: 36px;
+}
+
+.order__input--checkbox{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 0;
+	margin: 0;
+	opacity: 0;
+}
+
+.order__label--checkbox{
+	display: inline-block;
+	margin-left: 55px;
+	margin-bottom: 0;
+	margin-top: 15px;
+}
+
+.order__label--checkbox::after{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: block;
+	width: 36px;
+	height: 36px;
+	background-color:rgba(0,0,0,0.1);
+	content: '';
+}
+
+.order__input--checkbox:checked+ .order__label--checkbox::before{
+	position: absolute;
+	bottom: 15px;
+	left: 7px;
+	z-index: 1;
+	height: 10px;
+	width: 20px;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	-webkit-transform:  rotate(-45deg);
+	transform: rotate(-45deg);
+	content: '';
+}
+
+.order__label--checkbox:hover::after, .order__input--checkbox:focus+ .order__label--checkbox::after{
+	background-color:rgba(0,0,0,0.15);
+}
+
+.order__button{
+	margin-top: 45px;
+}
+
+.footer__wrap{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	padding-top: 60px;
+	padding-bottom: 43px;
+	padding-left: 90px;
+	background-color: black;
+	color: #989898;
+}
+
+.footer__item{
+	min-width: 220px;
+}
+
+.footer__item:not(:last-child){
+	margin-right: 93px;
+}
+
+.footer__item:last-child{
+	flex-grow: 1;
+	padding-right: 100px;
+}
+
+.footer__logo{
+	margin-bottom: 47px;
+}
+
+.sosial{
+	display: table;
+	font-size: 0;
+}
+
+.sosial__item{
+	display: inline-block;
+	width: 72px;
+}
+
+.image_link{
+	outline: none;	
+}
+
+.image_link::before{
+	display: inline-block;
+	width: 72px;
+	height: 68px;
+	box-sizing: border-box;
+	background-color: #1b1b1b;
+	border: 1px solid rgba(255, 203, 120, 0.1);	
+	background-repeat: no-repeat;
+	background-position: center;
+	content: '';
+}
+
+.image_link:hover::before, .image_link:focus::before{
+	border-color: rgba(255, 203, 120, 0.3);
+}
+
+.image_link:active::before{
+	opacity: 0.5;
+}
+
+.sosial__item-insta::before{
+	background-image: url(img/icon-insta.png);
+}
+
+.sosial__item-fb::before{
+	background-image: url(img/icon-fb.png);
+}
+
+.sosial__item-vk::before{
+	background-image: url(img/icon-vk.png);
+}
+
+.footer__menu{
+	margin-bottom: 57px;
+}
+
+.footer__text{
+	display: inline-block;
+	width: 230px;
+	float: left;
+}
+
+.footer__developer{
+	float: right;
+}
+
+.developer{
+	position: relative;
+	height: 68px;
+}
+
+.developer__name, .developer__link{
+	display: inline-block;
+	height: 68px;
+	line-height: 68px;
+}
+
+.developer__link::before{
+	position: absolute;
+	left: -100px;
+	background-image: url(img/htmlacademy.png);
+}
+
+.developer__link{
+	color: inherit;
+}
